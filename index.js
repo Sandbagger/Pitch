@@ -11,7 +11,7 @@ var TxtType = function(el, toRotate, period) {
     };
 
     TxtType.prototype.tick = function(){
-        debugger
+ 
         var i = this.loopNum % this.toRotate.length;
         var fullTxt = this.toRotate[i];
 
