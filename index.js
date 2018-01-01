@@ -10,7 +10,8 @@ var TxtType = function(el, toRotate, period) {
         this.isDeleting = false;
     };
 
-    TxtType.prototype.tick = function() {
+    TxtType.prototype.tick = function(){
+        debugger
         var i = this.loopNum % this.toRotate.length;
         var fullTxt = this.toRotate[i];
 
@@ -49,12 +50,8 @@ var TxtType = function(el, toRotate, period) {
             if (toRotate) {
               new TxtType(elements[i], JSON.parse(toRotate), period);
             }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid white}";
-        document.body.appendChild(css);
+        }  
+        
     };
 
  document.addEventListener('DOMContentLoaded', setListeners);

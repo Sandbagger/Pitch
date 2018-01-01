@@ -118,6 +118,10 @@ a {
 	color: white;
 }
 
+.typewrite > .wrap {
+border-right: 0.08em solid white;
+}
+
 .arrow-bio{
 	margin-top: 1em;
 	color: white;
