@@ -11,7 +11,7 @@ html, body{
 }
 
 h1 {
-	font-size: 4.5rem;
+	font-size: 4rem;
 	color: white;
 	margin: auto;
 }
@@ -365,4 +365,5 @@ figure:hover figcaption {
 	font-size: 1em;
 }
 
-}
+
+
