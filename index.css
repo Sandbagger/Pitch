@@ -11,7 +11,7 @@ html, body{
 }
 
 h1 {
-	font-size: 5rem;
+	font-size: 4.5rem;
 	color: white;
 	margin: auto;
 }
@@ -103,11 +103,7 @@ a {
 }
 
 
-#greeting{
-	font-size: 3.5rem;
-    font-weight: 300;
-    line-height: 1.2;
-}
+
 
 #subheader{
 	font-size: 1.2em;
@@ -342,11 +338,6 @@ figure:hover figcaption {
 
 
 @include media-breakpoint-up(sm) {
-  #greeting {
-    font-size: 4.5rem;
-    font-weight: 300;
-    line-height: 1.2;
-  }
 
 .nav-link {
 	margin-right: 1rem;
@@ -357,7 +348,8 @@ figure:hover figcaption {
 }
 
 @include media-breakpoint-up(md) {
-  #greeting {
+
+ h1 {
     font-size: 6rem;
     font-weight: 300;
     line-height: 1.2;

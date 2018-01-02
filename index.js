@@ -1,10 +1,10 @@
 
 /*Welcome splash*/
-var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
+var TxtType = function() {
+        this.toRotate = [ " JavaScript", " CSS", " HTML", " Bootstrap" ];
+        this.el =  document.getElementsByClassName('typewrite')[0];
         this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
+        this.period = 2000;
         this.txt = '';
         this.tick();
         this.isDeleting = false;
@@ -43,16 +43,11 @@ var TxtType = function(el, toRotate, period) {
     };
 
     window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }  
+              new TxtType();
+            };
         
-    };
+        
+
 
  document.addEventListener('DOMContentLoaded', setListeners);
 
