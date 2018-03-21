@@ -42,7 +42,7 @@
  
 <div id="welcome-box">
 		<h1>Hi, I'm Will</h1>
-		<h2 id="subheader">Font End Developer · <span class="typewrite" data-period="2000" data-type='[ " JavaScript", " CSS", " HTML", " Bootstrap" ]'>
+		<h2 id="subheader">Font End Developer · <span class="typewrite" data-period="2000" data-type='[ " JavaScript", " CSS", " HTML", " Bootstrap", "Flexbox" ]'>
    	 <span class="wrap"></span>
   		</span></h2> 
 	</div>
@@ -54,17 +54,27 @@
 
 <section id="bio">
  <h2 id="contact-header">Bio</h2>
+<div  id="bio-container">
 
- <div id="bio-container">
- 	
- 	<div id="bio-intro">
- 		<p class="text"> Hi Rosanna and Matt, <br><br>
+ 	<div class="container flex flex-column align-items-center justify-content-center" id="bio-intro">
+ 			
+ 				<p class="text">
 
- 		 I made this website in my downtime whilst I was on holiday. It uses Bootstrap, like the proposed new ABCUL website. So you should have no qualms in my ability to code on the new website. <br><br>
+			<img id="circle" src="square.jpg">I am a self-taught Front End Web developer that enjoys going to tech meetups and learning new languages and frameworks. I like to try and find practical applications for my coding skills at work.<br><br>
 
- 		 What would be good to know is whether the new website uses Bootstrap 3 or Bootstrap 4, the syntax is slightly different but more importantly it has implications for cross browser compatability that potentially affects our members user experience. Ask me for more details. <a href="" class="typewrite" data-period="2000" id="cursor" data-type='[ " |"]'><span class="wrap" style="border-right: 0.08em solid black"></span></a>
- 		</p>
- 	</div>
+			My background is in relationship and incident management in the credit union sector, I am adept at communicating with people with various levels of technical ability to resolve issues and collaborate on technical solutions. <br><br>
+
+			Providing 1st line support to a banking platform, I am also developing management information reporting ability for an automated credit decisioning product. I liaise between credit unions and external suppliers such as Fiserv and Experian, to iron out issues and further develop our range of products. <br><br>
+			
+				-William Neal
+
+</p>
+
+
+ 
+
+ 			
+
 
  	<i class="fa fa-chevron-down fa-3x arrow-portfolio" aria-hidden="true"></i>
  		
@@ -98,13 +108,14 @@
  		<div class="col-md-6 col-lg-4">
  			<figure class="hvr-float-shadow">
 			<img src="ttv2.png">
-			<a href="https://sandbagger.github.io/TwitchTV/" target="blank"><figcaption><div class="fig-header">TwitchTV App</div> <br> <div class="fig-text"></div></figcaption></a>
+			<a href="https://sandbagger.github.io/TwitchTV/" target="blank"><figcaption><div class="fig-header">TwitchTV App</div> <br> <div class="fig-text">Takes a given range of users and makes a series of parallel fetch requests for each user, one for profile information, and the other for streaming status. <br><br> Using promise chaining, a composited object is returned, and a div is dynamically created for each user.</div></figcaption></a>
 			</figure>
  		</div>
  		<div class="col-md-6 col-lg-4">
- 			<figure>
-			<img src="ImagePlaceholder.png">
-			<figcaption><div class="fig-header">Coming soon...</div></figcaption>
+ 		<figure class="hvr-float-shadow">
+			<img src="lc.png">
+			<figcaption><div class="fig-header">Loan calculator</div><br>
+				<div class="fig-text">User input facilitated by two sliders that dynamically generates repayment information. <br><br> Modal collects user input, which is passed via query string, to an external website that matches user to qualifying credit unions.  </div></figcaption>
 			</figure>
  		</div>
  		<div class="col-md-6 col-lg-4">
