@@ -152,20 +152,15 @@ border-right: 0.08em solid white;
 	padding-top: 15rem;
 	padding-bottom: 15rem;
 	background-color: #4ABDAC;
-flex-direction: column;
-	justify-content: center;
-	margin: 0 auto;
-	display: flex;
+	width: 100%;
 	
 }
 
 #bio-container{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+	
 	padding-top: .5em;
 	padding-bottom: .5em;
+	background-color: #4ABDAC;
 }
 
 #bio-intro{
@@ -181,8 +176,7 @@ flex-direction: column;
 	flex-wrap: wrap;
 	font-size: 1.5em;
 	color: #FFFAFA;
-=======
-	background: #FFFAFA;
+	background: #4ABDAC;
 	padding: 2% 2% 2% 2%;
 }
 
