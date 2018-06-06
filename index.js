@@ -8,7 +8,7 @@ let TxtType = class{
         this.loopNum = 0;
         this.period = 2000;
         this.txt = '';
-        this.tick = this.tick.bind(this);
+        this.tick();
         this.isDeleting = false;
     };
 
@@ -24,7 +24,7 @@ let TxtType = class{
 
         this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
-        var that = this;
+        
         var delta = 200 - Math.random() * 100;
 
         if (this.isDeleting) { delta /= 2; }
@@ -38,7 +38,7 @@ let TxtType = class{
         delta = 500;
         }
 
-        setTimeout(this.tick.bind(this), delta);
+        setTimeout(() => {this.tick()}, delta);
     }
 
 }
@@ -68,8 +68,6 @@ let TxtType = class{
     };
 
 
-
-
  document.addEventListener('DOMContentLoaded', setListeners);
 
 let scroll = function (arg){
@@ -80,9 +78,19 @@ let scroll = function (arg){
 
 
 function setListeners(){
+    console.log("setting setListeners")
+
+  $('.nav-link').click(function() {
+    var sectionTo = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: $(sectionTo).offset().top
+    },750);
+});
 
     $(".arrow-bio").click(scroll.bind(this, "#bio"));
     $(".arrow-portfolio").click(scroll.bind(this, "#projects"));
     $(".arrow-contact").click(scroll.bind(this, "#contact"));
 }
+
+
 
