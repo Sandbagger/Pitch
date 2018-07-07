@@ -74,4 +74,5 @@ class Typewriter extends React.Component {
 }
 
 const domContainer = document.querySelector('#typewriter');
-ReactDOM.render(e(Typewriter, {toRotate:["javaScript", 'CSS', 'HTML', 'I am currently teaching myself React <3'], period: 2000}), domContainer);
+const cursor = e('span', {className: 'wrap'});
+ReactDOM.render(e(Typewriter, {toRotate:["javaScript", 'CSS', 'HTML'], period: 2000}, cursor), domContainer);
