@@ -39,7 +39,7 @@ class Typewriter extends React.Component {
 		
 		let setFullTxt = this.props.toRotate[i];
 
-		let copy = {...this.state};
+		let copy = Object.assign({},this.state);
 
 		   if (this.state.isDeleting) {
         copy.txt = setFullTxt.substring(0, copy.txt.length - 1);
